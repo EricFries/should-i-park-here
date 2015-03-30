@@ -1,0 +1,13 @@
+SQL TODO
+
+delete rows with null values:
+
+DELETE FROM violations WHERE ViolationCounty IS ""
+DELETE FROM violations WHERE HouseNumber IS ""
+DELETE FROM violations WHERE StreetName IS ""
+
+
+create total_tickets column:
+
+SELECT FullAddress, COUNT(*) FROM violations GROUP BY FullAddress
+
