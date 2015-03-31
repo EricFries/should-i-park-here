@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 root 'violations#index'
 resources :violations do
-  get :search, :on => :collection
+  get :autocomplete_address, :on => :collection
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
