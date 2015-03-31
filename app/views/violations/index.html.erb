@@ -1,6 +1,6 @@
 <h1 id="search-header">Search</h1>
 
 <%= simple_form_for @violation do |f| %>
-	<%= f.input :address, label:"Address" %>
+	<%= f.input :address, :url => search_violations_path, :as => :autocomplete  %>
 	<%= f.button :submit, "Search" %>
 <% end  %>

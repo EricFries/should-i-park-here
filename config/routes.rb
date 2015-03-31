@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
 root 'violations#index'
-resources :violations
+resources :violations do
+  get :search, :on => :collection
+end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
