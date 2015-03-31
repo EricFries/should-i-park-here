@@ -15,6 +15,6 @@ class ViolationsController < ApplicationController
 
   private
   def violation_params
-    params.require(:violation).permit(:street_num, :street_name, :county)
+    params.require(:violation).permit(:address)
   end
 end

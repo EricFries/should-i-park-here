@@ -1,8 +1,6 @@
 <h1 id="search-header">Search</h1>
 
 <%= simple_form_for @violation do |f| %>
-	<%= f.input :street_num, label:"Street Number" %>
-	<%= f.input :street_name, label:"Street Name" %>
-	<%= f.input :county, label:"County" %>
+	<%= f.input :address, label:"Address" %>
 	<%= f.button :submit, "Search" %>
 <% end  %>
