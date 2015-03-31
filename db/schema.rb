@@ -11,6 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150331155053) do
+ActiveRecord::Schema.define(version: 20150331174619) do
+
+  create_table "violations", force: :cascade do |t|
+    t.string  "county"
+    t.string  "address"
+    t.integer "total"
+    t.integer "risk"
+  end
 
 end
