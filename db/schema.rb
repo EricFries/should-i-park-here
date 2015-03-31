@@ -11,14 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150331142456) do
+ActiveRecord::Schema.define(version: 20150331152009) do
 
   create_table "violations", force: :cascade do |t|
-    t.string  "street_num"
-    t.string  "street_name"
     t.string  "county"
     t.integer "total"
     t.integer "risk"
+    t.string  "address"
   end
 
 end

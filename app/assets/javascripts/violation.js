@@ -46,9 +46,3 @@ function hideSearchAgain(){
 function showSearchAgain(){
 	$("#search-again").show();
 }
-
-// Add button to display search form again.
-// Mabye just hide it initially and show it once a search is completed.
-// function displaySearchAgain(){
-
-// }
