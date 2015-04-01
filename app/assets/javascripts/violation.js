@@ -1,6 +1,7 @@
 $(function(){
 
 	hideSearchAgain();
+	hideSMSForm();
 
 	$("#search-again").click(function(){
 		showForm();
@@ -8,7 +9,6 @@ $(function(){
 		$("#new_violation").trigger("reset");
 		$(".search-result").empty();
 	});
-
 
 	$("#new_violation").on("submit", function(e){
 		e.preventDefault();
@@ -22,6 +22,7 @@ $(function(){
 				hideForm();
 				displayViolation(response);
 				showSearchAgain();
+				showSMSForm();
 			}
 		});
 	});
@@ -35,8 +36,16 @@ function hideForm(){
 	$("#new_violation").slideUp("fast");
 }
 
+function hideSMSForm(){
+	$(".sms-form").hide();
+}
+
 function showForm(){
 	$("#new_violation").show();
+}
+
+function showSMSForm(){
+	$(".sms-form").show();
 }
 
 function hideSearchAgain(){

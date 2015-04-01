@@ -1,0 +1,8 @@
+<h1>Send Me A Reminder To Move My Car</h1>
+<h2 style="color: #ff0000 "><%= params['msg'] %></h2>
+<h3>Enter your phone number to receive a reminder to move your car</h3>
+<form action="/send_text/sms" method="post" >
+   <input type="text" name="number" />
+   <input type="submit" value="Send Text!" id="text-btn">
+</form>
+
