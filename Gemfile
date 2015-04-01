@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.2.0'
 
+gem 'twilio-ruby', '~> 3.12'
+
 gem 'descriptive_statistics'
 
 gem 'simple_form', '~> 3.1.0'
