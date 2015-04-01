@@ -22,4 +22,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  url: <%= ENV["DATABASE_URL"] %>
+  adapter: postgresql
+  database: parking_database_production
+  pool: 5
+  timeout: 5000
