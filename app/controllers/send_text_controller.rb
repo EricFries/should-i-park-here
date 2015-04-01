@@ -4,6 +4,7 @@ class SendTextController < ApplicationController
  
   def sms
     number_to_send_to = params[:number]
+    address = params[:address]
  
     twilio_sid = Rails.application.secrets.twilio_sid
     twilio_token = Rails.application.secrets.twilio_token
@@ -14,8 +15,13 @@ class SendTextController < ApplicationController
     @twilio_client.account.sms.messages.create(
       :from => "+1#{twilio_phone_number}",
       :to => number_to_send_to,
-      :body => "This is an message. It gets sent to #{number_to_send_to}"
+      :body => "Move your car!  It's parked at #{address}."
     )
-    render layout: false
+
+    respond_to do |f|
+      f.html
+      f.js
+    end
+
   end
 end

@@ -1,8 +1,13 @@
-<h1>Send Me A Reminder To Move My Car</h1>
-<h2 style="color: #ff0000 "><%= params['msg'] %></h2>
-<h3>Enter your phone number to receive a reminder to move your car</h3>
+<div id="text-form">
 
-<%= form_tag(send_text_sms_path, remote: true) do %>
- <%= text_field_tag (:number) %>
- <%= submit_tag("Send Text") %>
-<%end%>
+	<h1>Remind Me To Move My Car</h1>
+	<h2 style="color: #ff0000 "><%= params['msg'] %></h2>
+	<h3>Enter your phone number to receive a reminder to move your car</h3>
+
+	<%= form_tag(send_text_sms_path, remote: true) do %>
+	<%= text_field_tag (:address), "#{@violation.address}" %><br>
+	 <%= text_field_tag (:number), nil, placeholder: "Phone Number" %>
+
+	 <%= submit_tag("Send Text") %>
+	<%end%>
+</div>

@@ -1,4 +1,5 @@
 	<ul>
 		<li><%= @violation.address %></li>
-		<li>Total Violations: <%= @violation.total %></li>
+		<li>Total Violations Last Year: <%= @violation.total %></li>
+			<li>Average Violations Per Day: <%= (@violation.total/365.0).round(2) %></li>
 	</ul>
