@@ -4,6 +4,7 @@
   <title>ShouldIParkHere</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'autocomplete-rails.js' %>
   <%= csrf_meta_tags %>
   <%= analytics_init if Rails.env.production? %>
 <!-- Latest compiled and minified CSS -->
@@ -19,6 +20,8 @@
 <body>
 
 <%= yield %>
+<div class="search-result"></div>
+<button class="btn btn-default" id="search-again">Search Again</button>
 
 </body>
 </html>
