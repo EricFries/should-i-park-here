@@ -11,7 +11,7 @@ class ViolationsController < ApplicationController
   end
 
   def autocomplete_address
-    @violations = Violation.order(:address).where("address LIKE ?", "#{params[:term].upcase}%")
+    @violations = Violation.order(:address).where("address LIKE ?", "#{params[:term].upcase}%").limit(10)
       respond_to do |format|
       format.html
       format.json { 

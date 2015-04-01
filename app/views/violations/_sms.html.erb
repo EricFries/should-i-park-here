@@ -6,6 +6,7 @@
 
 	<%= form_tag(send_text_sms_path, remote: true) do %>
 	<%= text_field_tag (:address), "#{@violation.address}" %><br>
+	 <%= text_field_tag (:time), nil, placeholder: "When Do You Need to Move Your Car?" %><br>
 	 <%= text_field_tag (:number), nil, placeholder: "Phone Number" %>
 
 	 <%= submit_tag("Send Text") %>
