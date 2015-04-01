@@ -7,11 +7,7 @@ class ViolationsController < ApplicationController
 
   def create
     @violation = Violation.find_by(violation_params)
-    if @violation
       render layout: false
-    else
-      render :index
-    end
   end
 
   def autocomplete_address
@@ -23,15 +19,6 @@ class ViolationsController < ApplicationController
       }
     end
   end
-  # def search
-  #   @violation = Violation.find_by(violation_params)
-  #   if @violation
-  #     render layout: false
-  #   else
-  #     render :index
-  #   end
-  # end 
-
 
   private
   def violation_params

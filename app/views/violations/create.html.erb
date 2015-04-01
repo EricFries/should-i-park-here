@@ -1,1 +1,7 @@
-<%= render @violation %>
+<% if !valid_address?  %>
+
+<% @violation = Violation.new(:total => 0, :address => "There are no tickets associated with this address." ) %>
+
+<% end  %>
+
+	<%= render @violation %>
