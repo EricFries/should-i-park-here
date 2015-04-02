@@ -2,12 +2,6 @@ $(function(){
 
 	hideSearchAgain();
 
-	$("#search-again").click(function(){
-		showForm();
-		hideSearchAgain();
-		$("#new_violation").trigger("reset");
-		$(".search-result").empty();
-	});
 
 	$("#new_violation").on("submit", function(e){
 		e.preventDefault();
@@ -21,10 +15,20 @@ $(function(){
 				hideForm();
 				displayViolation(response);
 				showSearchAgain();
+				listenerSearchAgain();
 			}
 		});
 	});
 });
+
+
+function listenerSearchAgain(){$("#search-again").click(function(){
+		showForm();
+		hideSearchAgain();
+		$("#new_violation").trigger("reset");
+		$(".search-result").empty();
+	});
+}
 
 function displayViolation(response){
 	$(".search-result").prepend(response);
