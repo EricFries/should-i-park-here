@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.2.0'
 
+gem "combined_time_select", "~> 1.0.1"
+
 gem 'twitter'
 
 gem 'twilio-ruby', '~> 3.12'
