@@ -1,41 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<!-- Description, Keywords and Author -->
+	<head>
+		<meta charset="utf-8">
+		<!-- Description, Keywords and Author -->
 		<meta name="should I park here" content="parking">
 		<meta name="parking" content="nyc, parking">
 		<meta name="peeps" content="flatiron">
-		
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShouldIParkHere</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= javascript_include_tag 'autocomplete-rails.js' %>
-  <%= csrf_meta_tags %>
-  <%= analytics_init if Rails.env.production? %>
-<!-- Latest compiled and minified CSS -->
-
-<!-- Optional theme -->
-
-<!-- Latest compiled and minified JavaScript -->
-  
-
-		
-		
-		<!-- Styles -->
-	
-		
-		
-		<!-- Main CSS-this isn't necessary -->
-	<!--	<link href="css/style.css.scss" rel="stylesheet"> -->
+		<title>ShouldIParkHere</title>
+		<%= stylesheet_link_tag    'application', media: 'all' %>
+		<%= javascript_include_tag 'application' %>
+		<%= javascript_include_tag 'autocomplete-rails.js' %>
+		<%= csrf_meta_tags %>
+		<%= analytics_init if Rails.env.production? %>
 				
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="#">
 	</head>
 	
 	<body>
-	
 		
 		<!-- UI X -->
 		<div class="ui-21">
@@ -47,76 +31,23 @@
 				</div>
 				<!-- UI Content -->
 				<div class="ui-content">
-					<!-- Heading -->
-					<!-- Paragraph -->
-					
 					<!-- Ui Form -->
 					<div class="ui-form">
-						
-							<div class="row">
+						<div class="row">
 									<!-- Form Group -->
-									<div class="form-group">
+							<div class="form-group">
 
 										<%= yield %>
 
-									<div class="search-result">
-
-									</div>
-										<div class = "white" class="ui-form" id="nyc-tweet">
-										<p><a href ="https://twitter.com/nycasp">NYC Says:</a> "<%= @tweet %>"</p></div>
-
+								<div class="search-result"></div>
+								<div class = "white" class="ui-form" id="nyc-tweet">
+									<p><a href ="https://twitter.com/nycasp">NYC Says:</a> "<%= @tweet %>"</p>
 								</div>
-								
-							
-							
-						</form>
-						
+							</div>
+						</div>
 					</div>
-					
 				</div>
 			</div>
-	
-		<script>
-			$(function() {
-					
-				setTimeout(function(){
-				
-					$('.fill-limit').each(function() {
-						var me = $(this);
-						var perc = me.attr("data-limit");
-						var current_perc = 10;
-						
-						if(!$(this).hasClass('stop')){
-						
-							var progress = setInterval(function() {
-															
-								if (current_perc>=perc) {
-									clearInterval(progress);
-								} else {
-									current_perc +=1;
-									me.parent().children().children('.filler').css('height', (current_perc)+'%');
-									me.html(current_perc+'<span>%</span>');
-								}
-						
-							}, 6);
-							
-							me.addClass('stop');
-							me.parent().children().children('.filler').addClass('stop');
-							
-						}
-						
-					});
-					
-				}, 0);
-				
-			});
-
-		</script>
-
-
-<div class="sms-form"></div>
-
-
-
-</body>
+		<div class="sms-form"></div>
+	</body>
 </html>
