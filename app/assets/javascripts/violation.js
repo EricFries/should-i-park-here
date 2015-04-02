@@ -2,7 +2,6 @@ $(function(){
 
 	hideSearchAgain();
 
-
 	$("#new_violation").on("submit", function(e){
 		e.preventDefault();
 		var url = $(this).attr("action");
@@ -20,7 +19,6 @@ $(function(){
 		});
 	});
 });
-
 
 function listenerSearchAgain(){$("#search-again").click(function(){
 		showForm();
@@ -40,8 +38,8 @@ function hideForm(){
 }
 
 function showForm(){
-	$("#new_violation").show();
-	$("#search-instruction").show();
+	$("#new_violation").slideDown();
+	$("#search-instruction").slideDown();
 }
 
 function hideSearchAgain(){

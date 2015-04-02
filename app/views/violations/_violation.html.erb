@@ -1,11 +1,14 @@
 <h3 class="white"><%= @violation.address %></h3>
 <h4 class="white">Total Violations Last Year: <%= @violation.total %></h4>
+
+<div class="white">
 <% if @violation.total < 8  %>
-	<p class="white"><%= "This is below average.  Risk level is low."  %></p>
+	<p class="green">This is below average.  Risk level is low.</p>
 	<% elsif @violation.total > 8 && @violation.total < 20  %>
-	<p class="white"><%= "This is above average.  Risk level is moderate."  %></p>
+	<p class="orange">This is above average.  Risk level is moderate.</p>
 	<% else %>
-	<p class="white"><%= "This is way above average.  Risk level is high."  %></p>
+	<p class="red">This is way above average.  Risk level is high.</p>
 <% end %>
+</div>
 
 
