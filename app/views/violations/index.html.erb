@@ -1,4 +1,4 @@
-<h3 class="white">Enter An Address to Check Your Parking Ticket Risk</h3>
+<h3 class="white" id="search-instruction">Enter An Address to Check Your Parking Ticket Risk</h3>
 
 <%= simple_form_for @violation do |f| %>
 	<%= f.input :address, label: false, :url => autocomplete_address_violations_path, :as => :autocomplete  %>

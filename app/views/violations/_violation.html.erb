@@ -1,28 +1,11 @@
-<div class="ui-264">
-		
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-sm-6">
-						<!-- UI content -->
-						<div class="block-content">
-							<!-- Filling block -->
-							<div class="fill-container">
-								<span class="fill-limit red" data-limit="<%= @violation.total %>"></span>
-								<!-- Circle fill by color background -->
-								<div class="filler-outer">
-									<div class="filler bg-red"><img class="img-responsive curve-img" src="img/ui-264/curve.png" alt="" /></div>
-								</div>
-							</div>
-							<!-- Heading -->
-							<h3>WordPress</h3>
-							<!-- Paragraph -->
-							<p>Lorem ipsum dolor sit amet, cones dolor sit amet lecture adipose.</p>
-						</div>
-					</div>
+<h3 class="white"><%= @violation.address %></h3>
+<h4 class="white">Total Violations Last Year: <%= @violation.total %></h4>
+<% if @violation.total < 8  %>
+	<p class="white"><%= "This is below average.  Risk level is low."  %></p>
+	<% elsif @violation.total > 8 && @violation.total < 20  %>
+	<p class="white"><%= "This is above average.  Risk level is moderate."  %></p>
+	<% else %>
+	<p class="white"><%= "This is way above average.  Risk level is high."  %></p>
+<% end %>
 
 
-	<ul>
-		<li><%= @violation.address %></li>
-		<li>Total Violations Last Year: </li>
-
-	</ul>

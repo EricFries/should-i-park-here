@@ -27,15 +27,17 @@ $(function(){
 });
 
 function displayViolation(response){
-	$(".search-result").append(response);
+	$(".search-result").prepend(response);
 }
 
 function hideForm(){
 	$("#new_violation").slideUp("fast");
+	$("#search-instruction").slideUp("fast");
 }
 
 function showForm(){
 	$("#new_violation").show();
+	$("#search-instruction").show();
 }
 
 function hideSearchAgain(){
