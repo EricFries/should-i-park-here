@@ -3,6 +3,11 @@ class ViolationsController < ApplicationController
 
   def index
     @violation = Violation.new
+    begin
+      @tweet = CLIENT.user_timeline("nycasp").first.text
+      rescue Twitter::Error::TooManyRequests => error
+        @tweet = ""
+    end
   end
 
   def create
