@@ -1,6 +1,5 @@
 class SendTextController < ApplicationController
-  def index
-  end
+  skip_before_action :verify_authenticity_token
  
   def sms
     number_to_send_to = params[:number]
