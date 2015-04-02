@@ -1,6 +1,8 @@
-<h3 class="white" id="search-instruction">Enter An Address to Check Your Parking Ticket Risk</h3>
+<h2 class="white" id="search-instruction">Enter An Address to Check Your Parking Ticket Risk</h2>
 
+<div class="ui-form">
 <%= simple_form_for @violation do |f| %>
 	<%= f.input :address, label: false, :url => autocomplete_address_violations_path, :as => :autocomplete  %>
-	<%= f.button :submit, "SEARCH", :class => 'btn-lg btn-blue'%>
+	<%= f.button :submit, "SEARCH", :class => 'btn-form'%>
 <% end  %>
+</div>
