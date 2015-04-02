@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.2.0'
 
+gem 'twitter'
+
 gem 'twilio-ruby', '~> 3.12'
 
 gem 'descriptive_statistics'
