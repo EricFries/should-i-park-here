@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<!-- Description, Keywords and Author -->
+		<meta name="should I park here" content="parking">
+		<meta name="parking" content="nyc, parking">
+		<meta name="peeps" content="flatiron">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShouldIParkHere</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
@@ -16,10 +23,77 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   
-</head>
-<body>
 
-<%= yield %>
+		
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style.css.scss" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI X -->
+		<div class="ui-21">
+				<!-- UI Image -->
+				<div class="ui-image">
+					<i class="fa fa-heart lblue icon"></i> 
+					<!-- Heading -->
+					<h1>Know Parking NYC</h1>
+				</div>
+				<!-- UI Content -->
+				<div class="ui-content">
+					<!-- Heading -->
+					<!-- Paragraph -->
+					
+					
+				
+					
+					<!-- Border -->
+					<img src="img/ui-21/border.png" alt="" class="img-responsive border">
+					
+					<!-- Ui Form -->
+					<div class="ui-form">
+						
+						<form class="form" role="form">
+							<div class="row">
+									<!-- Form Group -->
+									<div class="form-group">
+										<%= yield %>
+
+								</div>
+								
+							
+							
+						</form>
+						
+					</div>
+					
+				</div>
+			</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+	
 
 <div class="search-result"></div>
 

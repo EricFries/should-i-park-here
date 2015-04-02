@@ -1,10 +1,6 @@
-<h1 id="search-header">Search</h1>
+<h3 class="white">Enter An Address to Check Your Parking Ticket Risk</h3>
 
 <%= simple_form_for @violation do |f| %>
-	<%= f.input :address, :url => autocomplete_address_violations_path, :as => :autocomplete  %>
-	<%= f.button :submit, "Search" %>
+	<%= f.input :address, label: false, :url => autocomplete_address_violations_path, :as => :autocomplete  %>
+	<%= f.button :submit, "SEARCH", :class => 'btn-lg btn-blue' %>
 <% end  %>
-
-
-<a class="twitter-timeline" href="https://twitter.com/NYCASP" data-widget-id="583430338178850817" data-tweet-limit="1">Tweets by @NYCASP</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
