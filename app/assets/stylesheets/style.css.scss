@@ -754,6 +754,7 @@ hr {
 .btn-form-again .btn:hover{
     background: #609cec;
     color:#666;
+    border-bottom: none;
 }
 .ui-form .social a{
     display:block;
@@ -765,5 +766,11 @@ hr {
     font-size:12px;
     text-transform:uppercase;
     font-weight:600;
+}
+
+div form div input .btn-form-again #custom-btn {
+   border-bottom: none !important;
+   color:  #609cec ;
+   text-transform: uppercase !important;
 }
 

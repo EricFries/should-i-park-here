@@ -9,14 +9,10 @@
 		<%= text_field_tag (:address), "#{@violation.address}" %><br>
 		<%= text_field_tag (:number), nil, placeholder: "Phone Number" %><br>
 		<%= label_tag :hour, "When?" %><br>
-
-
-
 		<%= time_select :specific_time, :hour, {minute_step: 15, ampm: true} %><br>
-
 		<%= select_tag :time, options_for_select(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]) %><br>
-		 <div class="btn-form">
-		 <%= submit_tag("Send Text") %>
+		 <div class="btn-form-again">
+		 <%= submit_tag "Send Text", style: "border-bottom: none; color:  #609cec; text-transform: uppercase;" %>
 		 </div>
 	<%end%>
 </div>
