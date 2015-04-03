@@ -2,5 +2,5 @@
 
 <%= simple_form_for @violation do |f| %>
 	<%= f.input :address, placeholder: "11 Broadway, Manhattan", label: false, :url => autocomplete_address_violations_path, :as => :autocomplete  %>
-	<%= f.button :submit, "SEARCH", :class => 'btn-form'%>
+	<%= f.button :submit, "SEARCH", :class => 'btn-form active'%>
 <% end  %>
