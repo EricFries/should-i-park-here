@@ -1,11 +1,11 @@
 <% if !valid_address?  %>
-
-<% @violation = Violation.new(:total => 0, :address => "There are no tickets associated with this address." ) %>
-
+<div class="ui-form">
+<% @violation = Violation.new(:total => 0, :address => "No tickets associated with address." ) %>
+</div>
 <% end  %>
 
 	<%= render @violation %>
 
-<button class="btn-form" id="search-again">Search Again</button>
+<button class="btn-form-again" id="search-again">Search Again</button>
 
 	<%= render 'violations/sms' %>

@@ -1,8 +1,6 @@
 <h2 class="white" id="search-instruction">Enter An Address to Check Your Parking Ticket Risk</h2>
 
-<div class="ui-form">
 <%= simple_form_for @violation do |f| %>
 	<%= f.input :address, placeholder: "11 Broadway, Manhattan", label: false, :url => autocomplete_address_violations_path, :as => :autocomplete  %>
 	<%= f.button :submit, "SEARCH", :class => 'btn-form'%>
 <% end  %>
-</div>

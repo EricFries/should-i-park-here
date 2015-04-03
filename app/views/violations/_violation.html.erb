@@ -3,11 +3,13 @@
 
 <div class="white">
 <% if @violation.total < 8  %>
-	<p class="green">This is below average.  Risk level is low.</p>
+	<p>This is Below Bverage.  
+	<h4 class="green">Risk level is low</h4>
+	</p>
 	<% elsif @violation.total > 8 && @violation.total < 20  %>
-	<p class="orange">This is above average.  Risk level is moderate.</p>
+	<p class="orange">This is Above Average.  <h4 class="orange">Risk level is moderate</h4></p>
 	<% else %>
-	<p class="red">This is way above average.  Risk level is high.</p>
+	<p class="red">This is way Above Average.  <h4 class="red">Risk level is high</h4></p>
 <% end %>
 </div>
 
