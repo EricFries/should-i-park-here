@@ -1,40 +1,32 @@
-# Should I Park Here
+# Know Parking NYC
 
 ## Description
 
-Add a short description of your app.
+Know Parking NYC uses [historical parking ticket violation statistics](https://data.cityofnewyork.us/City-Government/Parking-Violations-Issued-Fiscal-Year-2014-August-/jt7v-77mi?) to calculate the risk of getting a parking ticket at any given address in New York City. Users enter a street address, and KnowParking displays the total tickets issued at that spot last year and whether that was higher or lower than the average across the city. Users can also send themselves an SMS reminder to move their car from that parking spot before a specific date/time.
 
-## Screenshots
-
-Add some spiffy screenshots of your app here.
-
-## Background
-
-Why did you want to make this app? What was your development process
-like?
 
 ## Features
 
-Bullet point some of the key features of your app here.
+* Parking ticket violation data parsed from [NYC Open Data Socrata API](http://dev.socrata.com/foundry/#/data.cityofnewyork.us/jt7v-77mi)
+* Utilizes [Twitter REST APIs](https://dev.twitter.com/rest/public) to display 311 notifications in real time.
+* Integrates [Twilio](https://www.twilio.com/blog/2014/02/twilio-on-rails-integrating-twilio-with-your-rails-4-app.html) for SMS push notifications
+* Front-end styling with jQuery, CSS, and SASS
 
-## Usage
 
-How do users use your app?
+### Development/Contribution
 
-## Development/Contribution
+Know Parking NYC is an ongoing work-in-progress. Please contribute by forking then submitting a pull request.
 
-Explain how people can contribute to your app. How should they write tests?
-Any things in particular you'd like to see in pull requests?
+### Future
 
-## Future
+* Add single-click geolocation
+* Create robust SMS scheduler
+* Enhance mobile styling
 
-What features are you currently working on? Only mention things that you
-actually are implementing. No pie-in-the-sky-never-gonna-happen stuff.
+### Authors
 
-## Author
-
-Link to your blog, twitter, etc!
+Team Know Parking NYC is [Kate Travers](https://github.com/ktravers), [Eric Fries](https://github.com/EricFries), and [Holden Steinberg](https://github.com/holdicon).
 
 ## License
 
-Should I Park Here is MIT Licensed. See LICENSE for details.
+Know Parking NYC is MIT Licensed. See LICENSE for details.
