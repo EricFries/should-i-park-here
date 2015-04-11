@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/ktravers/whos-ahead-now/badges/gpa.svg)](https://codeclimate.com/github/ktravers/whos-ahead-now)
+
 # Know Parking NYC
 
 ## Description
