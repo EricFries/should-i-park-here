@@ -56,12 +56,13 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'capybara-webkit'
   gem 'selenium-webdriver'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'factory_girl_rails'
   gem 'simplecov'
-  gem 'database_cleaner'
+  # gem 'database_cleaner'
   gem 'sqlite3'
   gem 'pry'
   gem 'guard-rspec', require: false

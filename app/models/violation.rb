@@ -1,4 +1,3 @@
 class Violation < ActiveRecord::Base
-attr_accessor :start_time
-
+  # attr_accessor :start_time
 end
