@@ -12,11 +12,11 @@ RSpec.feature "Search Parking by Address", type: :feature do
   end
 
   scenario 'search by autocompleted address returns > 0 total tickets', :js => true do
-    fill_in 'violation_address', :with => '11 broadway, m'
+    fill_in 'violation_address', :with => '11 BROADWAY, MANHATTAN'
     keypress = "var e = $.Event('keydown', { keyCode: 13 }); $('body').trigger(e);"
     page.driver.execute_script(keypress) 
     click_button "SEARCH"
-    expect(page).to have_content("Total Violations Last Year: 30")
+    expect(find(:css, 'div.search-result > h3').text).to eq("TOTAL VIOLATIONS LAST YEAR: 30")
   end
 
   scenario 'non-autocomplete search returns 0 total tickets' do 
