@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/ktravers/should-i-park-here/badges/gpa.svg)](https://codeclimate.com/github/ktravers/should-i-park-here)
+[![Code Climate](https://codeclimate.com/github/ktravers/should-i-park-here/badges/gpa.svg)](https://codeclimate.com/github/ktravers/should-i-park-here) [![Test Coverage](https://codeclimate.com/github/ktravers/should-i-park-here/badges/coverage.svg)](https://codeclimate.com/github/ktravers/should-i-park-here)
 
 # Know Parking NYC
 
