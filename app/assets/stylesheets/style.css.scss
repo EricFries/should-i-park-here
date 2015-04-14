@@ -560,7 +560,7 @@ hr {
 .ui-21 .ui-content{
 	max-width:500px;
 	margin:10px auto;
-	background:rgba(255,255,255,0.2);	
+	background:rgba(255,255,255,0.25);	
 	padding:10px;
 	border:1px solid rgba(255,255,255,0.2);
 	border-radius:5px;
@@ -721,7 +721,7 @@ hr {
     border-bottom:1px solid rgba(255,255,255,0.5);
     background:transparent;
     border-radius:0px;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .btn-form{
@@ -742,6 +742,7 @@ hr {
     background:#609cec;
     color:#666;
 }
+#search-again,
 .btn-form-again{
     border:0px;
     border-radius:25px;
@@ -756,8 +757,13 @@ hr {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;    
+    transition: all 0.5s ease;  
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;  
 }
+
 .btn-form-again .btn:hover{
     background: #609cec;
     color:#666;
@@ -774,10 +780,35 @@ hr {
     text-transform:uppercase;
     font-weight:600;
 }
-
-div form div input .btn-form-again #custom-btn {
-   border-bottom: none !important;
-   color:  #609cec ;
-   text-transform: uppercase !important;
+#search-again,
+form input.btn-form-again {
+    border-bottom: none;
+    border:0px;
+    border-radius:25px;
+    padding:10px 20px;
+    color: #609cec;
+    text-transform: uppercase;
+    width: 152px;
+    border:2px solid #609cec;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    min-width: 150px;
+    font-weight: 800;
+    background-color: rgba(96, 156, 236, 0.1);
 }
-
+#search-again:hover,
+form input.btn-form-again:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+#nyc-tweet{
+  margin: 2em 0 0 0;
+}
+#nyc-tweet > p > a {
+  color: #609cec;
+  font-weight: 500;
+}
