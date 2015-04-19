@@ -1,0 +1,16 @@
+{
+        "status": "Beta",
+        "thumbnailUrl": "http://uploads-registrar-flatironschool-com.s3.amazonaws.com/tech_experiences/screengrabs/production/445/large/Screen_Shot_2015-04-08_at_9.57.09_PM.png?1428545915",
+        "bornAt": "Flatiron School",
+        "geography": "NYC",
+        "politicalEntity":"",
+        "type":"Web App",
+        "needs": [
+                {"need": "User Testing"}
+        ],
+        "categories": [
+                {"category": "Department of Finance"},
+                {"category": "Parking Violations"},
+                {"category": "Open Data"}
+        ]
+}

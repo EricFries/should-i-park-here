@@ -25,4 +25,7 @@ RSpec.feature "Search Parking by Address", type: :feature do
     expect(page).to have_content("Total Violations Last Year: 0")
   end
 
+  scenario 'users can search again' do 
+  end
+
 end
