@@ -1,16 +1,15 @@
 <div class="white">
-	<h2 style="color: #ff0000 "><%= params['msg'] %></h2>
+	
 	<br><h4>Remind Me To Move My Car</h4>
 	<h5>Enter your phone number to receive a reminder to move your car:</h5>
 </div>
 <div id="text-form" class="black">
 	<%= form_tag(send_text_sms_path, remote: true) do %>
-		<%= text_field_tag (:number), nil, placeholder: "Phone Number" %><br>
+		<%= text_field_tag (:number), nil, placeholder: "555-685-4309" %><br>
 		<%= text_field_tag (:address), "#{@violation.address}" %><br><br>
 		<%= label_tag :hour, "When do you need to move your car?" %><br>
 		<%= time_select :full_date_time, :hour, {minute_step: 15, ampm: true} %>
 		<%= select_tag :day, options_for_select(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]) %><br>
 		<%= submit_tag "Send Text", class: "btn btn-default btn-form-again" %>
-		 </div>
 	<%end%>
 </div>
