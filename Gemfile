@@ -2,16 +2,12 @@ source 'https://rubygems.org'
 ruby '2.2.0'
 
 gem 'codeclimate-test-reporter', group: :test, require: nil
-
 gem 'combined_time_select', '~> 1.0.1'
-
 gem 'twitter'
-
 gem 'twilio-ruby', '~> 3.12'
-
 gem 'descriptive_statistics'
-
 gem 'simple_form', '~> 3.1.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use SCSS for stylesheets
@@ -25,9 +21,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
 gem 'jquery-ui-rails'
-
 gem 'rails-jquery-autocomplete'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

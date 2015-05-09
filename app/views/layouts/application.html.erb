@@ -6,7 +6,6 @@
 		<meta name="know parking nyc" content="parking">
 		<meta name="parking" content="nyc, parking">
 		<meta name="peeps" content="flatiron">
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Know Parking NYC</title>
 		<%= stylesheet_link_tag    'application', media: 'all' %>
@@ -21,41 +20,47 @@
 	
 	<body>
 		<a href="https://github.com/EricFries/should-i-park-here" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+
 		<!-- UI X -->
 		<div class="ui-21">
-				<!-- UI Image -->
-				<div class="ui-image">
-					<i class="icon"></i> 
-					<!-- Heading -->
-					<h1>Know Parking NYC</h1>
-				</div>
-				<!-- UI Content -->
-				<div class="ui-content">
-					<!-- Ui Form -->
-					<div class="ui-form">
-						<div class="row">
-									<!-- Form Group -->
-							<div class="form-group">
 
-								<%= yield %>
-
-								<div class="search-result"></div>
-								<div class = "white" class="ui-form" id="nyc-tweet">
-									<p><a href ="https://twitter.com/nycasp" target="_blank">@NYCASP says:</a> "<%= @tweet %>"</p>
-								</div>
-							</div>
-				
-				</div>
+			<!-- UI Image -->
+			<div class="ui-image">
+				<i class="icon"></i>
+				<h1>Know Parking NYC</h1>
 			</div>
-		<div class="sms-form"></div>
-		<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-		<div id="footer">
-  		<div class="navbar-text">
-    		<p class="text-muted">Made With ♥ <a href="http://flatironschool.com/" target="_blank">@flatironschool</a> By <a href="https://github.com/ktravers" target="_blank">Kate</a>, <a href="https://github.com/EricFries" target="_blank">Eric</a> & <a href="https://github.com/holdicon" target="_blank">Holden</a></p>
-  		</div>
-  		</footer>
-  		</div>
-					
-		</div>
+
+			<!-- UI Content -->
+			<div class="ui-content">
+
+				<!-- Ui Form -->
+				<div class="ui-form">
+					<div class="row">
+
+						<!-- Form Group -->
+						<div class="form-group">
+
+							<%= yield %>
+
+							<div class="search-result"></div>
+							<div class="white ui-form" id="nyc-tweet">
+								<p><a href="https://twitter.com/nycasp" target="_blank">@NYCASP says:</a> "<%= @tweet %>"</p>
+							</div>
+						</div><!-- end .form-group -->
+					</div><!-- end .row -->
+				</div><!-- end .ui-form -->
+
+				<div class="sms-form"></div>
+				<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+					<div id="footer">
+			  		<div class="navbar-text">
+				  		<footer>
+				    		<p class="text-muted">Made With ♥ <a href="http://flatironschool.com/" target="_blank">@flatironschool</a> By <a href="https://github.com/ktravers" target="_blank">Kate</a>, <a href="https://github.com/EricFries" target="_blank">Eric</a> & <a href="https://github.com/holdicon" target="_blank">Holden</a></p>
+				  		</footer>
+			  		</div><!-- end .navbar-text -->
+					</div><!-- end #footer -->
+				</div><!-- end .navbar.navbar-inverse.navbar-fixed-bottom -->
+			</div><!-- end .ui-content -->
+		</div><!-- end .ui-21 -->
 	</body>
 </html>
