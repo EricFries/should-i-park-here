@@ -1,6 +1,6 @@
 <h2 class="white" id="search-instruction">How risky is your parking spot?<br>Enter the address to find out:</h2>
 
 <%= simple_form_for @violation do |f| %>
-	<%= f.input :address, placeholder: "11 Broadway, Manhattan", label: false, :url => autocomplete_address_violations_path, :as => :autocomplete %>
-	<%= f.button :submit, "SEARCH", :class => 'btn-form-again'%>
+	<%= f.input :address, placeholder: "11 Broadway, Manhattan", label: false, url: autocomplete_address_violations_path, as: :autocomplete %>
+	<%= f.button :submit, "SEARCH", class: 'btn-form-again'%>
 <% end  %>

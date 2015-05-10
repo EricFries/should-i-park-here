@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
 
   root 'violations#index'
-  resources :violations do
-    get :autocomplete_address, :on => :collection
+  resources :violations, only: [:index, :create] do
+    get :autocomplete_address, on: :collection
   end
 
   post 'send_text/sms' => 'send_text#sms'
 
-  # The priority is based upon order of creation: first created -> highest priority.
+  # Priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
