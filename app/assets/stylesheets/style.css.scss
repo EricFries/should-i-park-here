@@ -3,17 +3,17 @@
 @import url('http://fonts.googleapis.com/css?family=Roboto:500');
 /* General */
 body {
-    color: #666666 ;
-    font-size: 13px;
-    line-height: 23px;
-    font-family: 'Open Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.65) 100%), url("sub.png") repeat;
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url("sub.png") repeat;
-    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url("sub.png") repeat;
-    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url("sub.png") repeat;
-    padding-top: 70px;
-     padding-bottom: 200px;
+  color: #666666 ;
+  font-size: 13px;
+  line-height: 23px;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.65) 100%), url("sub.png") repeat;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url("sub.png") repeat;
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url("sub.png") repeat;
+  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url("sub.png") repeat;
+  padding-top: 70px;
+  padding-bottom: 200px;
 }
 h1,
 h2,
@@ -28,26 +28,26 @@ h6 {
 	padding: 0px;
 }
 h1 {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 45px;
-    text-shadow: 0px 1px 0px #ccc;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  text-shadow: 0px 1px 0px #ccc;
 }
 h2 {
-    font-size: 25px;
-    line-height: 40px;
-    text-shadow: 0px 1px 0px #ccc;
+  font-size: 25px;
+  line-height: 40px;
+  text-shadow: 0px 1px 0px #ccc;
 }
 h3 {
-    font-size: 22px;
-    line-height: 37px;
-    color: white;
-    text-shadow: 0px 1px 0px #ccc;
+  font-size: 22px;
+  line-height: 37px;
+  color: white;
+  text-shadow: 0px 1px 0px #ccc;
 }
 h4 {
-    font-size: 18px;
-    line-height: 33px;
-    color: white;
+  font-size: 18px;
+  line-height: 33px;
+  color: white;
 }
 h5 {
 	font-size: 15px;
@@ -421,70 +421,6 @@ hr {
 	background: #d08166;
 	color: #ffffff;
 }
-/* Badges */
-.badge {
-	min-width: 10px;
-	padding: 3px 7px !important;
-	font-size: 12px;
-	line-height: 12px;
-	font-weight: normal;
-	display: inline-block;
-	color: #fff;
-	border-radius: 10px;
-}
-.badge.badge-white {
-	color: #666666;
-	background: #ffffff;
-}
-.badge.badge-grey {
-	color: #a2a2a2;
-	background: #eeeeee;
-}
-.badge.badge-black {
-	color: #ffffff;
-	background: #666666;
-}
-.badge.badge-red {
-	color: #ffffff;
-	background: #ed5441;
-}
-.badge.badge-green {
-	color: #ffffff;
-	background: #51d466;
-}
-.badge.badge-lblue {
-	color: #ffffff;
-	background: #32c8de;
-}
-.badge.badge-blue {
-	color: #ffffff;
-	background: #609cec;
-}
-.badge.badge-orange {
-	color: #ffffff;
-	background: #f8a841;
-}
-.badge.badge-yellow {
-	color: #ffffff;
-	background: #fcd419;
-}
-.badge.badge-purple {
-	color: #ffffff;
-	background: #cb79e6;
-}
-.badge.badge-rose {
-	color: #ffffff;
-	background: #ff61e7;
-}
-.badge.badge-brown {
-	color: #ffffff;
-	background: #d08166;
-}
-.btn .badge {
-	position: absolute;
-	top: -13px;
-	right: -8px;
-}
 /* Social Media */
 .facebook {	background: #3280e7; }
 .facebook:hover { background: #134fa0; }
@@ -621,192 +557,187 @@ hr {
 .ui-264{
 	margin:50px 0px;
 }
-.ui-264{
-    margin:50px 0px;
-}
 .ui-264 .block-content {
-    max-width: 360px;
-    margin: 20px auto;
-    text-align: center;
-    overflow:hidden;
+  max-width: 360px;
+  margin: 20px auto;
+  text-align: center;
+  overflow:hidden;
 }
 .ui-264 .fill-container {
-    position: relative;
-    z-index: 110;
-    max-width: 220px;
-    height: 220px;
-    margin: 20px auto;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.18), inset 0px 0px 5px rgba(0,0,0,0.2);
-    text-align: center;
-    overflow: hidden;
+  position: relative;
+  z-index: 110;
+  max-width: 220px;
+  height: 220px;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.18), inset 0px 0px 5px rgba(0,0,0,0.2);
+  text-align: center;
+  overflow: hidden;
 }
 .ui-264 .fill-container .fill-limit {
-    position: relative;
-    z-index: 50;
-    display: block;
-    margin-top: 40px;
-    font-size: 45px;
-    font-weight: 600;
-    text-align: center;
-    font-weight:300;
+  position: relative;
+  z-index: 50;
+  display: block;
+  margin-top: 40px;
+  font-size: 45px;
+  text-align: center;
+  font-weight:300;
 }
 .ui-264 .fill-container .fill-limit span { 
-    display: inline-block;
-    margin-left: 3px;
-    font-size: 25px;    
-    color:#444;
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 25px;  
+  color:#444;
 }
 .ui-264 .fill-container .filler-outer {
-    position: absolute;
-    bottom: 1px;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    height: 130px;
-   border-radius: 0 0 250px 250px;
-    overflow: hidden;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 130px;
+  border-radius: 0 0 250px 250px;
+  overflow: hidden;
 }
 .ui-264 .fill-container .filler {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 5;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
 }
 .ui-264 .fill-container .filler .curve-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 250px;
 }
 .ui-264 .block-content h3{
-    font-size:14px;
-    line-height:28px;
-    text-transform:uppercase;
+  font-size:14px;
+  line-height:28px;
+  text-transform:uppercase;
 }
 .ui-264 .block-content p{
-    font-size:12px;
-    line-height:24px;
-    max-width:300px;
-    margin:0px auto;
+  font-size:12px;
+  line-height:24px;
+  max-width:300px;
+  margin:0px auto;
 }
-
-
-
 .ui-form h3{
-    font-size:13px;
-    line-height:13px;
-    margin:15px 0px 25px 0px;
-    text-transform:uppercase;
-    color:#fff;
+  font-size:13px;
+  line-height:13px;
+  margin:15px 0px 25px 0px;
+  text-transform:uppercase;
+  color:#fff;
 }
 .ui-form form{
-    margin-bottom:15px;
-    color:#fff;
+  margin-bottom:15px;
+  color:#fff;
 }
 .ui-form form input,
 .ui-form form textarea{
-    box-shadow:none !important;
-    padding:6px 5px;
-    color:#fff;
-    border:0px;
-    border-bottom:1px solid rgba(255,255,255,0.5);
-    background:transparent;
-    border-radius:0px;
-    min-width: 250px;
+  box-shadow:none !important;
+  padding:6px 5px;
+  color:#fff;
+  border:0px;
+  border-bottom:1px solid rgba(255,255,255,0.5);
+  border-radius:0px;
+  background:transparent;
+  min-width: 250px;
 }
-
 .btn-form{
-    border:0px;
-    padding:10px 20px;
-    background:#fff;
-    color:#666;
-    text-transform:uppercase;
-    font-weight:600;
-    margin-top:15px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;    
+  border:0px;
+  padding:10px 20px;
+  background:#fff;
+  color:#666;
+  text-transform:uppercase;
+  font-weight:600;
+  margin-top:15px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .btn-form .btn:hover{
-    background:#609cec;
-    color:#666;
+  background:#609cec;
+  color:#666;
 }
 #search-again,
 .btn-form-again{
-    border:0px;
-    border-radius:25px;
-    padding:10px 20px;
-    border:1px solid #609cec;
-    color:#609cec;
-    text-transform:uppercase;
-    font-weight:600;
-    background:transparent;
-    margin-top:15px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;  
-    width: 150px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;  
+  border:0px;
+  border-radius:25px;
+  border:1px solid #609cec;
+  color:#609cec;
+  text-transform:uppercase;
+  font-weight:600;
+  background:transparent;
+  padding:10px 20px;
+  margin-top:15px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;  
+  width: 150px;
+  text-align: center;  
 }
-
 .btn-form-again .btn:hover{
-    background: #609cec;
-    color:#666;
-    border-bottom: none;
+  background: #609cec;
+  color:#666;
+  border-bottom: none;
 }
 .ui-form .social a{
-    display:block;
-    margin-bottom:15px;
-    color:#fff;
-    padding:8px 20px;
-    border-radius:25px;
-    text-align:center;
-    font-size:12px;
-    text-transform:uppercase;
-    font-weight:600;
+  display:block;
+  margin-bottom:15px;
+  color:#fff;
+  padding:8px 20px;
+  border-radius:25px;
+  text-align:center;
+  font-size:12px;
+  text-transform:uppercase;
+  font-weight:600;
 }
 #search-again,
 form input.btn-form-again {
-    border-bottom: none;
-    border:0px;
-    border-radius:25px;
-    padding:10px 20px;
-    color: #609cec;
-    text-transform: uppercase;
-    width: 152px;
-    border:2px solid #609cec;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease; 
-    min-width: 150px;
-    font-weight: 800;
-    background-color: rgba(96, 156, 236, 0.1);
+  border-bottom: none;
+  border:0px;
+  border:2px solid #609cec;
+  border-radius:25px;
+  padding:10px 20px;
+  color: #609cec;
+  text-transform: uppercase;
+  width: 152px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease; 
+  min-width: 150px;
+  font-weight: 800;
+  background-color: rgba(96, 156, 236, 0.1);
 }
 #search-again:hover,
 form input.btn-form-again:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
 }
 #nyc-tweet{
   margin: 2em 0 0 0;
+  color: white;
 }
 #nyc-tweet > p > a {
   color: #609cec;
   font-weight: 500;
+}
+#send-text {
+  margin-top: 30px;
 }

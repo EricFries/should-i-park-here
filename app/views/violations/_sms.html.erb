@@ -10,6 +10,6 @@
 		<%= label_tag :hour, "When do you need to move your car?" %><br>
 		<%= time_select :full_date_time, :hour, {minute_step: 15, ampm: true} %>
 		<%= select_tag :day, options_for_select(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]) %><br>
-		<%= submit_tag "Send Text", class: "btn btn-default btn-form-again" %>
+		<%= submit_tag "Send Text", class: "btn btn-default btn-form-again", id: "send-text" %>
 	<%end%>
 </div>
