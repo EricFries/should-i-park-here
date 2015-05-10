@@ -1,8 +1,8 @@
-<% if !valid_address?  %>
+<% if !valid_address? %>
   <div class="ui-form">
-  <% @violation = Violation.new(:total => 0, :address => "No tickets associated with address.") %>
+  <% @violation = Violation.new(total: 0, address: "No tickets associated with address.") %>
   </div>
-<% end  %>
+<% end %>
 
 <%= render @violation %>
 

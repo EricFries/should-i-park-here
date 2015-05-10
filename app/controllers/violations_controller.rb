@@ -12,6 +12,7 @@ class ViolationsController < ApplicationController
 
   def create
     @violation = Violation.find_by(violation_params)
+    binding.pry
     render layout: false
   end
 
