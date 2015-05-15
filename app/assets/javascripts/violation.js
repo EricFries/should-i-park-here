@@ -20,7 +20,8 @@ $(function(){
 	});
 });
 
-function listenerSearchAgain(){$("#search-again").click(function(){
+function listenerSearchAgain(){
+	$("#search-again").click(function(){
 		showForm();
 		hideSearchAgain();
 		$("#new_violation").trigger("reset");
